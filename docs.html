@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manus AI | Authentication Pages Documentation</title>
+    <!-- Bootstrap 5.3.2 from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        xintegrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+        }
+
+        .documentation-header {
+            background-color: #ffffff;
+            padding: 2.5rem 0;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .documentation-content {
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+        }
+
+        .card-body pre {
+            background-color: #f1f3f5;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+        }
+
+        .anchor-offset {
+            padding-top: 5rem;
+            margin-top: -5rem;
+        }
+        
+        .section-title {
+            font-weight: 600;
+            color: #212529;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .list-group-item {
+            border: none;
+            padding: 0.5rem 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-primary" href="#">Manus AI Docs</a>
+            <span class="navbar-text">
+                Modern Authentication Pages
+            </span>
+        </div>
+    </nav>
+
+    <header class="documentation-header">
+        <div class="container">
+            <h1 class="display-5 fw-bold text-dark">Modern Authentication Pages with Bootstrap 5</h1>
+            <p class="text-muted lead">A professional and fully responsive authentication system documentation.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+                <span class="badge bg-primary fs-6">Author: Manus AI</span>
+                <span class="badge bg-secondary fs-6">Version: 1.0.0</span>
+                <span class="badge bg-info text-dark fs-6">Last Updated: August 28, 2025</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="documentation-content">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar Table of Contents -->
+                <div class="col-lg-3">
+                    <div class="list-group sticky-top" style="top: 6rem;">
+                        <a class="list-group-item list-group-item-action py-2" href="#overview">Overview</a>
+                        <a class="list-group-item list-group-item-action py-2" href="#features">Features</a>
+                        <a class="list-group-item list-group-item-action py-2" href="#installation">Installation & Setup</a>
+                        <a class="list-group-item list-group-item-action py-2" href="#file-structure">File Structure</a>
+                        <a class="list-group-item list-group-item-action py-2" href="#usage">Usage Guide</a>
+                        <a class="list-group-item list-group-item-action py-2" href="#customization">Customization</a>
+                        <a class="list-group-item list-group-item-action py-2" href="#technical-docs">Technical Documentation</a>
+                        <a class="list-group-item list-group-item-action py-2" href="#security">Security Considerations</a>
+                        <a class="list-group-item list-group-item-action py-2" href="#accessibility">Accessibility</a>
+                        <a class="list-group-item list-group-item-action py-2" href="#performance">Performance</a>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-lg-9">
+                    <section id="overview" class="anchor-offset">
+                        <h2 class="section-title">1. Overview</h2>
+                        <p>This authentication system represents a modern approach to user authentication interfaces, combining the robust foundation of Bootstrap 5 with custom enhancements that deliver exceptional user experience. The system follows current web design trends for 2025, emphasizing clean aesthetics, intuitive interactions, and professional polish.</p>
+                        <p>The authentication pages are designed with a mobile-first approach, ensuring optimal performance and usability across all device types. The implementation prioritizes accessibility, security, and maintainability while providing extensive customization options for different brand requirements.</p>
+                    </section>
+                    
+                    <hr>
+
+                    <section id="features" class="anchor-offset">
+                        <h2 class="section-title">2. Features</h2>
+                        <h3>Core Authentication Features</h3>
+                        <p>The system provides comprehensive functionality for user login, registration, and password recovery. The login page offers traditional email/password and social media integration. The registration process includes real-time validation, and the new <strong>forgot password page</strong> allows users to reset their credentials securely.</p>
+                        
+                        <h3>Advanced Form Validation</h3>
+                        <p>Real-time form validation provides immediate feedback to users, significantly improving the overall user experience. The system operates on client-side JavaScript, with checks for email format, password complexity, and required fields. The password strength indicator on the registration page provides dynamic feedback as users type, helping them create secure passwords.</p>
+                        
+                        <h3>Interactive UI Elements</h3>
+                        <p>Interactive elements include password visibility toggles, social authentication buttons with hover animations, and floating labels that create an elegant visual hierarchy. These features are designed to be intuitive and accessible, ensuring a smooth user journey.</p>
+                        
+                        <h3>Responsive Design Implementation</h3>
+                        <p>The layout is fully responsive, adapting seamlessly to all devices using Bootstrap 5's advanced grid system. The mobile-first approach ensures optimal usability on smaller screens without compromising functionality.</p>
+                    </section>
+
+                    <hr>
+
+                    <section id="installation" class="anchor-offset">
+                        <h2 class="section-title">3. Installation & Setup</h2>
+                        <p>Getting started requires minimal setup. Simply download the provided HTML files and assets, and you can deploy them on any modern web server. All necessary dependencies are included via CDN links.</p>
+                        <h3>File Prerequisites</h3>
+                        <ul>
+                            <li>A modern web server for serving static files.</li>
+                            <li>Modern web browsers (Chrome, Firefox, Safari, Edge) for full functionality.</li>
+                        </ul>
+                    </section>
+
+                    <hr>
+
+                    <section id="file-structure" class="anchor-offset">
+                        <h2 class="section-title">4. File Structure</h2>
+                        <pre><code>auth-pages/
+├── login.html             # Main login page
+├── register.html          # User registration page
+├── forgot_password.html   # Password recovery page
+├── css/
+│   └── style.css          # Custom styles and responsive design
+├── js/
+│   └── auth.js            # Form validation and interactivity
+└── images/                # Directory for custom images and assets
+</code></pre>
+                    </section>
+
+                    <hr>
+
+                    <section id="usage" class="anchor-offset">
+                        <h2 class="section-title">5. Usage Guide</h2>
+                        <p>Implement the pages by placing the files in your project directory. The system is designed to work as a standalone solution or can be integrated into a larger application. For a complete system, you will need to implement a backend to handle form submissions and user data securely.</p>
+                        
+                        <h3>Login Page</h3>
+                        <p>The <code>login.html</code> file handles user authentication with email and password fields. It includes form validation and social login buttons. The form submission logic is handled by the `auth.js` file, which you will connect to your backend API.</p>
+                        
+                        <h3>Registration Page</h3>
+                        <p>The <code>register.html</code> page guides new users through the account creation process. It features a password strength meter that provides visual feedback to encourage strong password creation. It also includes a checkbox for agreeing to terms and conditions.</p>
+                        
+                        <h3>Forgot Password Page</h3>
+                        <p>The <code>forgot_password.html</code> page is for users who have forgotten their password. It contains a simple form to collect the user's email address. The form's action will trigger an email to be sent from your backend with a password reset link.</p>
+                    </section>
+
+                    <hr>
+
+                    <section id="customization" class="anchor-offset">
+                        <h2 class="section-title">6. Customization</h2>
+                        <p>The entire system is highly customizable:</p>
+                        <ul>
+                            <li><strong>Color Scheme:</strong> Modify the CSS custom properties in <code>style.css</code> to change the primary and secondary colors.</li>
+                            <li><strong>Typography:</strong> Update the Google Fonts link and the font-family CSS variable to use your brand's typeface.</li>
+                            <li><strong>Layout:</strong> Adjust the Bootstrap grid classes and spacing to fit your specific design requirements.</li>
+                        </ul>
+                    </section>
+
+                    <hr>
+
+                    <section id="technical-docs" class="anchor-offset">
+                        <h2 class="section-title">7. Technical Documentation</h2>
+                        <h3>HTML Structure</h3>
+                        <p>The HTML files use modern semantic markup and Bootstrap 5's floating labels for a clean, accessible structure. Each page is a complete document with meta tags and links to the necessary CSS and JavaScript files.</p>
+                        
+                        <h3>CSS Architecture</h3>
+                        <p>The custom CSS is organized using CSS variables for centralized theme management. This allows for quick and consistent style updates across all pages. The responsive design uses Bootstrap's breakpoints and custom media queries.</p>
+                        
+                        <h3>JavaScript Functionality</h3>
+                        <p>The <code>auth.js</code> file handles all client-side logic:</p>
+                        <ul>
+                            <li><strong>Form Validation:</strong> Prevents submission of invalid data and provides real-time feedback.</li>
+                            <li><strong>UI Interactions:</strong> Manages password visibility toggles and dynamic UI elements.</li>
+                            <li><strong>Form Toggling:</strong> Enables switching between login and registration pages within a single view.</li>
+                            <li><strong>Password Strength:</strong> Calculates and visually represents password complexity.</li>
+                            <li><strong>Form Submission:</strong> Contains placeholder functions for `handleLogin`, `handleRegister`, and `handleForgotPassword` to connect to your backend.</li>
+                        </ul>
+                    </section>
+
+                    <hr>
+
+                    <section id="security" class="anchor-offset">
+                        <h2 class="section-title">8. Security Considerations</h2>
+                        <p><strong>Crucial Reminder:</strong> Client-side validation is a user experience enhancement and is <strong>not a substitute for server-side security.</strong> All form inputs must be validated, sanitized, and processed securely on the server to prevent vulnerabilities such as injection attacks and data manipulation.</p>
+                    </section>
+
+                    <hr>
+                    
+                    <section id="accessibility" class="anchor-offset">
+                        <h2 class="section-title">9. Accessibility</h2>
+                        <p>The system meets WCAG 2.1 AA compliance standards. This includes:</p>
+                        <ul>
+                            <li>Semantic HTML and proper ARIA labels for screen reader support.</li>
+                            <li>High color contrast ratios for readability.</li>
+                            <li>Full keyboard navigation support with visible focus indicators.</li>
+                        </ul>
+                    </section>
+
+                    <hr>
+                    
+                    <section id="performance" class="anchor-offset">
+                        <h2 class="section-title">10. Performance</h2>
+                        <p>The pages are optimized for fast loading times through minimized CSS and JavaScript, and external assets are loaded from high-performance CDNs. The JavaScript code uses debouncing and efficient event handling to maintain a smooth, responsive user interface.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
